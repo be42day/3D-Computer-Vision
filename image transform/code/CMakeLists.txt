@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( HomographicTransfer )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( HomographicTransfer HomographicTransfer.cpp )
+target_link_libraries( HomographicTransfer ${OpenCV_LIBS} )
