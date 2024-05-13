@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( RectifierH-inverse )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( RectifierH-inverse RectifierH-inverse.cpp )
+target_link_libraries( RectifierH-inverse ${OpenCV_LIBS} )
