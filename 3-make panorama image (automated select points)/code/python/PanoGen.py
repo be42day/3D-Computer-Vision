@@ -516,5 +516,5 @@ for i in range(W):
                 pano_blank_image[j][i] = image5[j-start_pt_image5_y][i-start_pt_image5_x]
 
 # Save the result
-cv2.imwrite('panorama_result.jpg', pano_blank_image)
+cv2.imwrite('../../images/results/panorama_result.jpg', pano_blank_image)
 
